@@ -1,0 +1,104 @@
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.black {
+  position: absolute;
+  background-color: rgba(28, 28, 28, 0.4352941176);
+  height: 100%;
+  width: 100%;
+  filter: blur(1);
+}
+
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  height: 100vh;
+  display: flex;
+  background: url(/img/fundo.jpg) #1c1c1c;
+  background-size: cover;
+  filter: blur(1);
+}
+
+.clock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  color: white;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+span {
+  text-shadow: 3px 3px 10px #1c1c1c;
+  font-size: 7rem;
+  transition: all 0.5s;
+  cursor: default;
+}
+
+span:hover {
+  color: #00aaff;
+}
+
+h1 {
+  position: absolute;
+  left: 50%;
+  top: 10%;
+  transform: translate(-50%);
+  color: white;
+}
+
+h2 {
+  color: white;
+  z-index: 1;
+  position: absolute;
+  left: 50%;
+  bottom: 5%;
+  transform: translate(-50%, -50%);
+  font-size: 17px;
+}
+h2 a {
+  color: #00aaff;
+  transition: all 0.5s;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 900;
+  text-shadow: 0px 0px 5px #003e5c;
+}
+h2 a:hover {
+  color: #1c1c1c;
+}
+
+@media (max-width: 613px) {
+  h2 {
+    font-size: 12px;
+  }
+  h2 a {
+    font-size: 14px;
+  }
+}
+@media (max-width: 465px) {
+  h2 {
+    font-size: 10px;
+  }
+  h2 a {
+    font-size: 12px;
+  }
+  span {
+    font-size: 5rem;
+  }
+}
+@media (max-width: 331px) {
+  h2 {
+    font-size: 7px;
+  }
+  h2 a {
+    font-size: 8px;
+  }
+  span {
+    font-size: 3rem;
+  }
+}/*# sourceMappingURL=style.css.map */
